@@ -8,7 +8,7 @@ function Foreground () {
         fileSize:".09mb",
         close:false,
         tag:{
-            isOpen:false, tagTitle:"Download Now" , tagColor:"Green"
+            isOpen:true, tagTitle:"" , tagColor:"green"
         },
     
       },
@@ -18,7 +18,7 @@ function Foreground () {
         fileSize:".09mb",
         close:true,
         tag:{
-            isOpen:true, tagTitle:"Download Now" , tagColor:"Green"
+            isOpen:true, tagTitle:"Download Now" , tagColor:"green"
         },
     
       },
@@ -27,14 +27,14 @@ function Foreground () {
       fileSize:".09mb",
       close:true,
       tag:{
-          isOpen:true, tagTitle:"Download Now" , tagColor:"Green"
+          isOpen:true, tagTitle:"Download Now" , tagColor:"blue"
       },
   
     },
     ];
 
   return (
-    <div className='fixed top-0 z-[3] left-0 w-full h-full flex gap-10 m-10  '>
+    <div className='fixed top-0 z-[3] left-0 w-full h-full flex gap-10 p-5 flex-wrap  '>
         {data.map((item,index)=>(
             <Card data={item}/>
         ))}

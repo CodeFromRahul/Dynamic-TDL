@@ -23,8 +23,8 @@ function Card(props) {
         </div>
         <div>
             {props.data.tag.isOpen&&(
-                <div className='absolute   bottom-0 left-0 h-10  tag w-full bg-green-600 '>
-       <h5 className='text-white flex align-center justify-center  py-2 text-sm font-semibold font-mono'>Download Now</h5>
+                <div className={`absolute   bottom-0 left-0 h-10  tag w-full ${props.data.tag.tagColor =="blue"? "bg-blue-600":"bg-green-600"}`}>
+       <h5 className='text-white flex align-center justify-center  py-2 text-sm font-semibold font-mono'>{props.data.tag.tagTitle}</h5>
         </div>
             )}
         </div>
