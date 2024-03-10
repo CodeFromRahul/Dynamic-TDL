@@ -3,10 +3,10 @@ import { FaBeer } from 'react-icons/fa';
 import { FaFileMedical } from "react-icons/fa6";
 import { LuDownload } from "react-icons/lu";
 import { MdCancel } from "react-icons/md";
-
+import { motion } from "framer-motion"
 function Card(props) {
   return (
-    <div className='w-60  h-72 relative   rounded-[35px] bg-zinc-600 overflow-hidden'>
+    <motion.div drag dragConstraints={props.reference} whileDrag={{scale:1.2}} dragElastic={0.1} className='w-60  h-72 relative   rounded-[35px] bg-zinc-600 overflow-hidden'>
     <div className='px-9 py-8'>
 
    <FaFileMedical/>
@@ -31,7 +31,7 @@ function Card(props) {
        
      </div>
     </div>
-    </div>
+    </motion.div>
   )
 }
 
