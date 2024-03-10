@@ -6,7 +6,7 @@ import { MdCancel } from "react-icons/md";
 import { motion } from "framer-motion"
 function Card(props) {
   return (
-    <motion.div drag dragConstraints={props.reference} whileDrag={{scale:1.2}} dragElastic={0.1} className='w-60  h-72 relative   rounded-[35px] bg-zinc-600 overflow-hidden'>
+    <motion.div drag dragConstraints={props.reference} whileDrag={{scale:1.2}} dragTransition={{bounceStiffness:100,bounceDamping:30}} dragElastic={0.1} className='w-60  h-72 relative   rounded-[35px] bg-zinc-600 overflow-hidden'>
     <div className='px-9 py-8'>
 
    <FaFileMedical/>
